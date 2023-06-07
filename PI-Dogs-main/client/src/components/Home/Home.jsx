@@ -15,7 +15,7 @@ const Home = () => {
   // Paginado
 
   const [currentPage, setCurrentPage] = useState(1); // Página actual, comienza en 1
-  const [dogsPerPage] = useState(9); // Cantidad de perros por página
+  const [dogsPerPage] = useState(8); // Cantidad de perros por página
 
   const lastDogIndex = currentPage * dogsPerPage;
   const firstDogIndex = lastDogIndex - dogsPerPage;

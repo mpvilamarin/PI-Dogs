@@ -22,10 +22,14 @@
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s;
+    transition: transform 0.3s;
   }
+  
   .SearchButton:hover {
     background-color: #571845;
+    transform: scale(1.1);
   }
+
   .Error {
     color: red;
     margin-top: 10px;

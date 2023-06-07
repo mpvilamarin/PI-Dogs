@@ -61,8 +61,10 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 10px;
+    transition: 0.3s;
   }
   
   .button:hover {
     background-color: #571845;
+    transform: translateY(10px);
   }

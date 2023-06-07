@@ -13,7 +13,7 @@ const deleteDog = async (id) => {
     throw new Error('Dog not found');
   }
 
-  await foundDog.delete();
+  await foundDog.destroy();
 
   return foundDog;
 };
