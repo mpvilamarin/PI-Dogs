@@ -3,8 +3,8 @@ const { Dog } = require('../db');
 const deleteDog = async (id) => {
   if (!id) {
     throw new Error('This dog does not exist');
-  } else if (typeof id === 'number') {
-    throw new Error('You cannot delete this dog');
+  } else if (!/^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/.test(id)) {
+    throw new Error('Invalid ID');
   }
 
   const foundDog = await Dog.findByPk(id);

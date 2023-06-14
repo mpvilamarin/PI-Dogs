@@ -24,6 +24,7 @@ const Detail = () => {
         <p className={style.temperaments}>
           Temperament: {dog.temperament ? dog.temperament.join(", ") : ""}
         </p>
+        <p className={style.info}>ID: {dog.id}</p>
         <p className={style.info}>Life expectancy: {dog.age}</p>
         <p className={style.info}>Height: {dog.height} cm</p>
         <p className={style.info}>Weight: {dog.weight} kg</p>

@@ -38,7 +38,7 @@ const Home = () => {
     event.preventDefault();
     resetPagination();
     dispatch(getDogs());
-    window.location.reload()
+    //window.location.reload()
   };
 
   const handleFilterByTemperament = (event) => {
